@@ -1,78 +1,62 @@
-# Byte-compiled / optimized / DLL files
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
 *.so
-
-# Distribution / packaging
 .Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.pyc
 
-# PyInstaller
-#  Usually these files are written by a script go generate an executable file for Python programs
-#  See https://pyinstaller.org/en/stable/spec-files.html for more details
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-junk.py
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
+# Django
 *.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
-media/ # If you don't want to track user-uploaded media files. Often better to handle media separately.
-static_root/ # Or whatever your STATIC_ROOT is. These are collected, not versioned.
-staticfiles/ # Django's default staticfiles directory for collectstatic
+media/
+mediafiles/
+staticfiles/
 
-# Other
-.env
-.env.*
-*.env
-env/
-venv/
-.venv/
-ENV/
-# If you have specific IDE or OS files:
+# MySQL
+*.sql
+
+# IDE
 .vscode/
 .idea/
-*.DS_Store
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+.directory
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Pytest
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
